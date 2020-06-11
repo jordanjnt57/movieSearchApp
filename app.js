@@ -1,6 +1,7 @@
 const express = require('express');
 const ejs = require('ejs');
 const request = require('request');
+const PORT = process.env.PORT || 3000;
 
 
 
@@ -28,6 +29,6 @@ app.get('/results', function(req,res){
 })
 
 
-app.listen(3000, function(){
+app.listen(PORT, function(){
     console.log('Server Started!');
 });
